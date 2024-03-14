@@ -64,3 +64,78 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+
+
+
+
+
+
+
+
+////// shadow--
+
+
+import React, { useState } from 'react';
+import { View, Text, Button, StyleSheet, Image, ScrollView, Pressable, StatusBar, Alert } from 'react-native';
+
+const logImg = require("./assets/StatusNeo-Logo.png");
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+    <View style={[styles.textContainer,styles.shadowO]}>
+    <Text style={styles.startT}>Welcome</Text>
+    </View>
+    </View>
+  )
+}
+
+const styles = StyleSheet.create({
+  container: {
+
+    padding:10,
+    justifyContent:'center',
+    alignItems:'center',
+    flex:1,
+    backgroundColor:'white'
+
+    
+    
+  },
+
+  textContainer:{
+
+    height:100,
+    width:250,
+    backgroundColor:'blue', 
+    justifyContent:'center',
+    alignItems:'center',
+    borderRadius:15
+    
+
+  },
+
+  startT:{
+    fontSize:50,
+    color:'white'
+  
+  },
+
+  shadowO:{
+    shadowColor: "#333333",
+    shadowOffset:{
+      height:20,
+      width:10
+    },
+    shadowOpacity:1.5,
+    shadowRadius:4
+
+
+  }
+
+  
+});
+
+export default App;
+
