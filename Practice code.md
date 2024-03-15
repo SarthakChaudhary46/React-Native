@@ -138,3 +138,16 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+
+
+
+
+/////// screen change
+
+
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  setTimeout(() => {
+    setIsLoaded(true);
+  }, 2000);
+
